@@ -8,15 +8,19 @@ import Features from "./pages/Features";
 
 const App = () => {
   return (
-    <div>
-      <div className="sticky top-0 mb-3">
-        <Navbar />
+    <div className="flex justify-center">
+      <div>
+        <div className="sticky top-0 mb-3" style={{ zIndex: 1000 }}>
+          <Navbar />
+        </div>
+        <div className="max-w-screen-xl">
+          <Routes>
+            <Route path="/" element={<Overview />} />
+            <Route path="/features" element={<Features />} />
+            <Route path="/compare" element={<Compare />} />
+          </Routes>
+        </div>
       </div>
-      <Routes>
-        <Route path="/" element={<Overview />} />
-        <Route path="/features" element={<Features />} />
-        <Route path="/compare" element={<Compare />} />
-      </Routes>
     </div>
   );
 };

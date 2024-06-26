@@ -12,15 +12,15 @@ const Landing = () => {
   };
 
   return (
-    <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-      <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 my-8 lg:pt-0 lg:my-24">
+    <div className="container lg:bg-blue-50 rounded-3xl px-4 sm:px-6 lg:px-8">
+      <div className="flex flex-col lg:flex-row gap-8 lg:gap-7 py-8 lg:py-24">
         <div className="w-full lg:w-1/2">
           <h1 className="text-3xl banner-heading sm:text-4xl lg:text-5xl font-bold mb-4 lg:mb-6">
             Transform your <span className="text-blue-700">Earbuds</span> with
             Futuristic <br className="hidden sm:block" />{" "}
             <span className="text-blue-700">AI-Features</span>
           </h1>
-          <p className="text-base sm:text-lg font-semibold">
+          <p className="text-base sm:text-lg">
             Experience the next generation of{" "}
             <span className="font-bold">TWS earbuds</span> with advanced{" "}
             <span className="font-bold">AI-capabilities</span> designed to
